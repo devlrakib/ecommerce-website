@@ -23,6 +23,12 @@ nav{
     height: 30px;
 }
 
+.menu_icon {
+    width: 28px;
+    margin-left: 20px;
+    /* display: none; */
+}
+
 
 nav ul{
     display: inline-block;
@@ -45,7 +51,7 @@ p{
 }
 
 .header{
-    background-color: #ffe7e7;
+    background: radial-gradient(#fff, #ffd6d6);
 }
 
 .container{
@@ -92,6 +98,53 @@ p{
     border-radius: 30px;
     gap: 20px;
 }
+
+
+/* Feature Categories CSS */
+
+.categories{
+    margin: 70px 0;
+}
+
+.small_categories{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 100%;
+}
+/* Responsive CSS */
+@media only screen and (max-width: 600px)
+.col-2, .col-3, .col-4 {
+    flex-basis: 100%;
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 900px){
+ .menu_icon{
+    display: block;
+    cursor: pointer;
+ }
+}
+
+
 
 
 
